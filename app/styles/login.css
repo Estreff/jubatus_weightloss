@@ -1,0 +1,140 @@
+.login-page {
+  height: calc(100% + 60px);
+  width: 100vw;
+}
+
+.page-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.login-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.facebook-circle {
+  display: flex;
+  background-color: #0476e8;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-facebook-f {
+  color: #fff;
+}
+
+.google-circle {
+  display: flex;
+  background-color: #ab0a16;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.fa-google {
+  color: #fff;
+}
+
+.or-title {
+  width: 80%;
+  text-align: center;
+  border-bottom: 1px solid #13997d;
+  line-height: 0.03em;
+  margin: 40px 0 10px;
+}
+
+.or-title span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+.email-login {
+  width: 100%;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input.login {
+  border-radius: 25px;
+  margin-top: 20px;
+  width: 80%;
+  background-color: #e0e2f7;
+  border: 2px solid #18cfa9;
+  padding: 15px;
+}
+
+input:focus.login {
+  outline: none !important;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 10px #719ece;
+}
+
+.register-side {
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.home-link {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  color: var(--color-support-dark);
+  font-size: 28px;
+  background-color: var(--color-default);
+  border: 3px solid var(--color-support-dark);
+  border-radius: 50%;
+  transition: all 1s;
+}
+
+.home-link:hover {
+  color: var(--color-default);
+  background-color: var(--color-support-dark);
+  border: 3px solid var(--color-default);
+}
+
+h2.register-title {
+  font-weight: bolder;
+  font-size: 32px;
+}
+
+p.register-description {
+  width: 70%;
+  text-align: center;
+}
+
+.btn-register {
+  background-color: #18cfa9;
+  box-shadow: 2px 2px 2px lightgray;
+}
+
+.btn-register:hover {
+  border-color: #fff !important;
+}

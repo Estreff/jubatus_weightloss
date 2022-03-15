@@ -1,0 +1,170 @@
+.home-page {
+  background-color: var(--color-default);
+  height: 100%;
+  width: 100%;
+}
+
+.home-actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content {
+  display: grid;
+  grid-template-areas:
+    'nav'
+    'intro'
+    'free-info'
+    'recipe'
+    'features'
+    'feature-descriptions'
+    'footer';
+  /* gap: 10px; */
+}
+
+.top-nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: end;
+  height: 80px;
+  align-items: center;
+}
+
+.intro {
+  grid-area: intro;
+  background-color: var(--color-primary);
+  padding: 20px;
+  color: var(--color-default);
+  border-top: 10px solid var(--color-support-dark);
+  border-bottom: 10px solid var(--color-secondary);
+}
+
+.free-info {
+  grid-area: free-info;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.recipes {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.recipe-image,
+.restaurant-image {
+  width: 100%;
+}
+
+.recipe-image img,
+.restaurant-image img {
+  width: 100%;
+}
+
+.restaurants {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.link-description {
+  color: var(--color-primary);
+  font-size: 20px;
+  font-weight: 400;
+  height: 100px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+.link-button {
+  display: inline-block;
+  position: relative;
+  bottom: 100px;
+}
+
+.features {
+  grid-area: features;
+  max-height: 150px;
+  background-color: var(--color-primary);
+  border-top: 10px solid var(--color-secondary);
+  border-bottom: 10px solid var(--color-support-dark);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.features-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--color-default);
+}
+
+.features-details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.feature {
+  color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature i {
+  background-color: var(--color-support);
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.feature-title {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.feature-descriptions {
+  grid-area: feature-descriptions;
+}
+
+.feature-description {
+  grid-area: feature-1;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.feature-icon {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: var(--color-primary);
+}
+
+.feature-deatils-title {
+  font-size: 30px;
+  color: var(--color-primary);
+  filter: brightness(85%);
+}

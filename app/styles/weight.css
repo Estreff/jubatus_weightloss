@@ -1,0 +1,8 @@
+.weight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-default);
+  height: 100vh;
+  width: 100vw;
+}
